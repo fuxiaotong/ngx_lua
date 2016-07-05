@@ -1,0 +1,55 @@
+2016/06/30 02:34:35 [notice] 22048#0: signal process started
+2016/06/30 02:34:35 [error] 22048#0: open() "/usr/local/openresty/nginx/logs/nginx.pid" failed (2: No such file or directory)
+2016/06/30 03:05:38 [notice] 22165#0: signal process started
+2016/06/30 03:05:38 [error] 22165#0: invalid PID number "" in "/usr/local/openresty/nginx/logs/nginx.pid"
+2016/06/30 03:10:48 [emerg] 22209#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/06/30 03:10:48 [emerg] 22209#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/06/30 03:10:48 [emerg] 22209#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/06/30 03:10:48 [emerg] 22209#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/06/30 03:10:48 [emerg] 22209#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/06/30 03:10:48 [emerg] 22209#0: still could not bind()
+2016/06/30 03:12:01 [emerg] 22212#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/06/30 03:12:01 [emerg] 22212#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/06/30 03:12:01 [emerg] 22212#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/06/30 03:12:01 [emerg] 22212#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/06/30 03:12:01 [emerg] 22212#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/06/30 03:12:01 [emerg] 22212#0: still could not bind()
+2016/06/30 03:16:47 [emerg] 22231#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/06/30 03:16:47 [emerg] 22231#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/06/30 03:16:47 [emerg] 22231#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/06/30 03:16:47 [emerg] 22231#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/06/30 03:16:47 [emerg] 22231#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/06/30 03:16:47 [emerg] 22231#0: still could not bind()
+2016/06/30 03:20:41 [emerg] 22254#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/06/30 03:20:41 [emerg] 22254#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/06/30 03:20:41 [emerg] 22254#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/06/30 03:20:41 [emerg] 22254#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/06/30 03:20:41 [emerg] 22254#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/06/30 03:20:41 [emerg] 22254#0: still could not bind()
+2016/06/30 03:21:38 [notice] 22259#0: signal process started
+2016/06/30 03:22:03 [emerg] 22265#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/06/30 03:22:03 [emerg] 22265#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/06/30 03:22:03 [emerg] 22265#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/06/30 03:22:03 [emerg] 22265#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/06/30 03:22:03 [emerg] 22265#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/06/30 03:22:03 [emerg] 22265#0: still could not bind()
+2016/06/30 03:23:43 [notice] 22280#0: signal process started
+2016/06/30 03:24:26 [notice] 22299#0: signal process started
+2016/06/30 03:24:26 [error] 22299#0: open() "/usr/local/openresty/nginx/logs/nginx.pid" failed (2: No such file or directory)
+2016/06/30 03:24:31 [notice] 22302#0: signal process started
+2016/06/30 03:24:31 [error] 22302#0: open() "/usr/local/openresty/nginx/logs/nginx.pid" failed (2: No such file or directory)
+2016/06/30 03:25:57 [notice] 22312#0: signal process started
+2016/06/30 03:25:57 [error] 22312#0: open() "/usr/local/openresty/nginx/logs/nginx.pid" failed (2: No such file or directory)
+2016/06/30 03:26:29 [notice] 22316#0: signal process started
+2016/06/30 03:34:46 [error] 2421#0: *2 open() "/usr/local/openresty/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1"
+2016/06/30 03:34:46 [error] 2421#0: *2 open() "/usr/local/openresty/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1"
+2016/06/30 03:43:29 [notice] 2488#0: signal process started
+2016/07/01 00:09:01 [notice] 8648#0: signal process started
+2016/07/01 02:33:14 [error] 8652#0: *6 open() "/usr/local/openresty/nginx/html/app/test_parallels" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /app/test_parallels HTTP/1.1", host: "127.0.0.1"
+2016/07/01 02:33:34 [error] 8652#0: *7 open() "/usr/local/openresty/nginx/html/app/test_parallels" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /app/test_parallels HTTP/1.1", host: "127.0.0.1"
+2016/07/01 02:33:39 [error] 8652#0: *8 open() "/usr/local/openresty/nginx/html/app/test_parallels" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /app/test_parallels HTTP/1.1", host: "127.0.0.1"
+2016/07/01 02:33:47 [error] 8652#0: *9 open() "/usr/local/openresty/nginx/html/app/test_parallels" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /app/test_parallels HTTP/1.1", host: "127.0.0.1"
+2016/07/01 02:35:10 [error] 8652#0: *10 open() "/usr/local/openresty/nginx/html/app/test_parallels" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /app/test_parallels HTTP/1.1", host: "127.0.0.1"
+2016/07/01 02:36:22 [error] 8652#0: *11 open() "/usr/local/openresty/nginx/html/app/test_parallels" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /app/test_parallels HTTP/1.1", host: "127.0.0.1"
+2016/07/03 18:59:36 [notice] 3297#0: signal process started
+2016/07/03 18:59:36 [error] 3297#0: open() "/usr/local/openresty/nginx/logs/nginx.pid" failed (2: No such file or directory)
