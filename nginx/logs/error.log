@@ -57,3 +57,159 @@
 2016/07/05 03:19:11 [notice] 15873#0: signal process started
 2016/07/05 03:21:35 [notice] 15890#0: signal process started
 2016/07/05 03:37:45 [notice] 16270#0: signal process started
+2016/07/05 23:38:46 [notice] 4214#0: signal process started
+2016/07/05 23:38:46 [error] 4214#0: open() "/usr/local/openresty/nginx/logs/nginx.pid" failed (2: No such file or directory)
+2016/07/05 23:39:25 [error] 4240#0: *1 failed to load external Lua file "/user/local/openresty/nginx/main_server/lua/lua_handle.lua": cannot open /user/local/openresty/nginx/main_server/lua/lua_handle.lua: No such file or directory, client: 127.0.0.1, server: localhost, request: "GET /test HTTP/1.1", host: "127.0.0.1"
+2016/07/05 23:40:33 [notice] 4254#0: signal process started
+2016/07/05 23:41:19 [notice] 4270#0: signal process started
+2016/07/05 23:41:35 [notice] 4288#0: signal process started
+2016/07/05 23:41:35 [notice] 4293#0: signal process started
+2016/07/05 23:44:50 [notice] 4318#0: signal process started
+2016/07/05 23:45:42 [notice] 4334#0: signal process started
+2016/07/05 23:57:57 [notice] 4407#0: signal process started
+2016/07/05 23:58:05 [error] 4408#0: *11 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:6: Expected colon but found invalid token at character 9
+stack traceback:
+coroutine 0:
+	[C]: in function 'decode'
+	/usr/local/openresty/nginx/main_server/lua/lua_handle.lua:6: in function </usr/local/openresty/nginx/main_server/lua/lua_handle.lua:1>, client: 127.0.0.1, server: localhost, request: "GET /test HTTP/1.1", host: "127.0.0.1"
+2016/07/05 23:59:21 [error] 4408#0: *12 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:6: Expected colon but found invalid token at character 9
+stack traceback:
+coroutine 0:
+	[C]: in function 'decode'
+	/usr/local/openresty/nginx/main_server/lua/lua_handle.lua:6: in function </usr/local/openresty/nginx/main_server/lua/lua_handle.lua:1>, client: 127.0.0.1, server: localhost, request: "GET /test HTTP/1.1", host: "127.0.0.1"
+2016/07/05 23:59:38 [error] 4408#0: *13 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:6: Expected colon but found invalid token at character 9
+stack traceback:
+coroutine 0:
+	[C]: in function 'decode'
+	/usr/local/openresty/nginx/main_server/lua/lua_handle.lua:6: in function </usr/local/openresty/nginx/main_server/lua/lua_handle.lua:1>, client: 127.0.0.1, server: localhost, request: "GET /test HTTP/1.1", host: "127.0.0.1"
+2016/07/05 23:59:40 [notice] 4519#0: signal process started
+2016/07/06 00:00:10 [notice] 4545#0: signal process started
+2016/07/06 00:00:12 [error] 4546#0: *15 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:6: Expected colon but found invalid token at character 9
+stack traceback:
+coroutine 0:
+	[C]: in function 'decode'
+	/usr/local/openresty/nginx/main_server/lua/lua_handle.lua:6: in function </usr/local/openresty/nginx/main_server/lua/lua_handle.lua:1>, client: 127.0.0.1, server: localhost, request: "GET /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 00:00:32 [error] 4546#0: *16 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:6: Expected colon but found invalid token at character 9
+stack traceback:
+coroutine 0:
+	[C]: in function 'decode'
+	/usr/local/openresty/nginx/main_server/lua/lua_handle.lua:6: in function </usr/local/openresty/nginx/main_server/lua/lua_handle.lua:1>, client: 127.0.0.1, server: localhost, request: "GET /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 00:00:32 [error] 4546#0: *17 open() "/usr/local/openresty/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1"
+2016/07/06 00:00:32 [error] 4546#0: *17 open() "/usr/local/openresty/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1"
+2016/07/06 00:00:54 [error] 4546#0: *18 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:6: Expected colon but found invalid token at character 9
+stack traceback:
+coroutine 0:
+	[C]: in function 'decode'
+	/usr/local/openresty/nginx/main_server/lua/lua_handle.lua:6: in function </usr/local/openresty/nginx/main_server/lua/lua_handle.lua:1>, client: 127.0.0.1, server: localhost, request: "GET /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 00:01:59 [error] 4546#0: *19 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:6: Expected colon but found invalid token at character 9
+stack traceback:
+coroutine 0:
+	[C]: in function 'decode'
+	/usr/local/openresty/nginx/main_server/lua/lua_handle.lua:6: in function </usr/local/openresty/nginx/main_server/lua/lua_handle.lua:1>, client: 127.0.0.1, server: localhost, request: "GET /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 00:02:01 [notice] 4580#0: signal process started
+2016/07/06 00:02:03 [error] 4581#0: *20 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:14: Expected colon but found invalid token at character 9
+stack traceback:
+coroutine 0:
+	[C]: in function 'decode'
+	/usr/local/openresty/nginx/main_server/lua/lua_handle.lua:14: in function </usr/local/openresty/nginx/main_server/lua/lua_handle.lua:1>, client: 127.0.0.1, server: localhost, request: "GET /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 00:02:14 [error] 4581#0: *21 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:14: Expected colon but found invalid token at character 9
+stack traceback:
+coroutine 0:
+	[C]: in function 'decode'
+	/usr/local/openresty/nginx/main_server/lua/lua_handle.lua:14: in function </usr/local/openresty/nginx/main_server/lua/lua_handle.lua:1>, client: 127.0.0.1, server: localhost, request: "GET /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 00:02:45 [error] 4581#0: *22 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:14: Expected colon but found invalid token at character 9
+stack traceback:
+coroutine 0:
+	[C]: in function 'decode'
+	/usr/local/openresty/nginx/main_server/lua/lua_handle.lua:14: in function </usr/local/openresty/nginx/main_server/lua/lua_handle.lua:1>, client: 127.0.0.1, server: localhost, request: "GET /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 00:02:54 [notice] 4613#0: signal process started
+2016/07/06 00:15:51 [notice] 4688#0: signal process started
+2016/07/06 00:22:00 [notice] 4741#0: signal process started
+2016/07/06 00:22:30 [notice] 4757#0: signal process started
+2016/07/06 00:22:32 [error] 4761#0: *29 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:18: attempt to index global 'obj' (a nil value)
+stack traceback:
+coroutine 0:
+	/usr/local/openresty/nginx/main_server/lua/lua_handle.lua: in function </usr/local/openresty/nginx/main_server/lua/lua_handle.lua:1>, client: 127.0.0.1, server: localhost, request: "GET /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 00:22:58 [error] 4761#0: *30 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:18: attempt to index global 'obj' (a nil value)
+stack traceback:
+coroutine 0:
+	/usr/local/openresty/nginx/main_server/lua/lua_handle.lua: in function </usr/local/openresty/nginx/main_server/lua/lua_handle.lua:1>, client: 127.0.0.1, server: localhost, request: "GET /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 00:23:39 [error] 4761#0: *31 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:18: attempt to index global 'obj' (a nil value)
+stack traceback:
+coroutine 0:
+	/usr/local/openresty/nginx/main_server/lua/lua_handle.lua: in function </usr/local/openresty/nginx/main_server/lua/lua_handle.lua:1>, client: 127.0.0.1, server: localhost, request: "GET /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 00:23:42 [notice] 4781#0: signal process started
+2016/07/06 00:23:43 [error] 4785#0: *32 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:18: attempt to index global 'obj' (a nil value)
+stack traceback:
+coroutine 0:
+	/usr/local/openresty/nginx/main_server/lua/lua_handle.lua: in function </usr/local/openresty/nginx/main_server/lua/lua_handle.lua:1>, client: 127.0.0.1, server: localhost, request: "GET /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 00:23:47 [error] 4785#0: *33 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:18: attempt to index global 'obj' (a nil value)
+stack traceback:
+coroutine 0:
+	/usr/local/openresty/nginx/main_server/lua/lua_handle.lua: in function </usr/local/openresty/nginx/main_server/lua/lua_handle.lua:1>, client: 127.0.0.1, server: localhost, request: "GET /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 00:24:21 [notice] 4818#0: signal process started
+2016/07/06 00:24:23 [error] 4822#0: *34 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:18: attempt to index global 'obj' (a nil value)
+stack traceback:
+coroutine 0:
+	/usr/local/openresty/nginx/main_server/lua/lua_handle.lua: in function </usr/local/openresty/nginx/main_server/lua/lua_handle.lua:1>, client: 127.0.0.1, server: localhost, request: "GET /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 00:24:39 [notice] 4832#0: signal process started
+2016/07/06 00:25:04 [notice] 4846#0: signal process started
+2016/07/06 00:46:01 [notice] 4924#0: signal process started
+2016/07/06 00:47:22 [notice] 4952#0: signal process started
+2016/07/06 00:58:04 [notice] 5046#0: signal process started
+2016/07/06 00:58:34 [notice] 5062#0: signal process started
+2016/07/06 00:58:35 [error] 5063#0: *41 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:20: bad argument #1 to 'say' (non-array table found)
+stack traceback:
+coroutine 0:
+	[C]: in function 'say'
+	/usr/local/openresty/nginx/main_server/lua/lua_handle.lua:20: in function </usr/local/openresty/nginx/main_server/lua/lua_handle.lua:1>, client: 127.0.0.1, server: localhost, request: "GET /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 01:02:23 [notice] 5084#0: signal process started
+2016/07/06 01:02:37 [notice] 5098#0: signal process started
+2016/07/06 01:12:07 [notice] 5144#0: signal process started
+2016/07/06 01:12:18 [notice] 5160#0: signal process started
+2016/07/06 01:12:30 [notice] 5174#0: signal process started
+2016/07/06 01:13:12 [notice] 5188#0: signal process started
+2016/07/06 01:13:13 [error] 5189#0: *47 failed to load external Lua file "/usr/local/openresty/nginx/main_server/lua/lua_handle.lua": /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:19: ')' expected near 'i', client: 127.0.0.1, server: localhost, request: "GET /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 01:13:38 [notice] 5204#0: signal process started
+2016/07/06 01:18:39 [notice] 5250#0: signal process started
+2016/07/06 01:20:39 [notice] 5278#0: signal process started
+2016/07/06 01:58:19 [notice] 5432#0: signal process started
+2016/07/06 01:58:21 [error] 5433#0: *53 attempt to send data on a closed socket: u:0000000041852A50, c:0000000000000000, ft:0 eof:0, client: 127.0.0.1, server: localhost, request: "GET /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 02:00:05 [notice] 5453#0: signal process started
+2016/07/06 02:00:07 [error] 5454#0: *55 attempt to send data on a closed socket: u:00000000419CDA50, c:0000000000000000, ft:0 eof:0, client: 127.0.0.1, server: localhost, request: "GET /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 02:00:56 [notice] 5473#0: signal process started
+2016/07/06 02:14:30 [notice] 5596#0: signal process started
+2016/07/06 02:14:43 [error] 5597#0: *59 failed to load external Lua file "/usr/local/openresty/nginx/main_server/lua/lua_handle.lua": /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:73: '}' expected near '=', client: 127.0.0.1, server: localhost, request: "GET /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 02:15:19 [notice] 5612#0: signal process started
+2016/07/06 02:15:44 [notice] 5626#0: signal process started
+2016/07/06 02:16:47 [notice] 5642#0: signal process started
+2016/07/06 02:18:57 [notice] 5674#0: signal process started
+2016/07/06 02:25:13 [notice] 5724#0: signal process started
+2016/07/06 02:25:14 [error] 5725#0: *68 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:80: attempt to call method 'hmgetall' (a nil value)
+stack traceback:
+coroutine 0:
+	/usr/local/openresty/nginx/main_server/lua/lua_handle.lua: in function </usr/local/openresty/nginx/main_server/lua/lua_handle.lua:1>, client: 127.0.0.1, server: localhost, request: "GET /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 02:25:26 [notice] 5740#0: signal process started
+2016/07/06 02:25:28 [error] 5741#0: *70 attempt to send data on a closed socket: u:0000000040191920, c:0000000000000000, ft:0 eof:0, client: 127.0.0.1, server: localhost, request: "GET /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 02:25:28 [error] 5741#0: *70 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:81: bad argument #1 to 'pairs' (table expected, got nil)
+stack traceback:
+coroutine 0:
+	[C]: in function 'pairs'
+	/usr/local/openresty/nginx/main_server/lua/lua_handle.lua:81: in function </usr/local/openresty/nginx/main_server/lua/lua_handle.lua:1>, client: 127.0.0.1, server: localhost, request: "GET /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 02:26:10 [notice] 5754#0: signal process started
+2016/07/06 02:26:11 [error] 5755#0: *72 attempt to send data on a closed socket: u:0000000041A6C910, c:0000000000000000, ft:0 eof:0, client: 127.0.0.1, server: localhost, request: "GET /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 02:26:11 [error] 5755#0: *72 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:81: bad argument #1 to 'pairs' (table expected, got nil)
+stack traceback:
+coroutine 0:
+	[C]: in function 'pairs'
+	/usr/local/openresty/nginx/main_server/lua/lua_handle.lua:81: in function </usr/local/openresty/nginx/main_server/lua/lua_handle.lua:1>, client: 127.0.0.1, server: localhost, request: "GET /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 02:26:24 [notice] 5770#0: signal process started
+2016/07/06 02:26:50 [notice] 5784#0: signal process started
+2016/07/06 02:26:51 [error] 5785#0: *76 attempt to send data on a closed socket: u:000000004097A8D0, c:0000000000000000, ft:0 eof:0, client: 127.0.0.1, server: localhost, request: "GET /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 02:27:12 [notice] 5799#0: signal process started
+2016/07/06 02:27:13 [error] 5800#0: *78 attempt to send data on a closed socket: u:00000000414478E0, c:0000000000000000, ft:0 eof:0, client: 127.0.0.1, server: localhost, request: "GET /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 02:27:34 [notice] 5815#0: signal process started
+2016/07/06 02:28:11 [notice] 5830#0: signal process started
+2016/07/06 02:29:48 [notice] 5858#0: signal process started
+2016/07/06 02:32:36 [notice] 5891#0: signal process started
+2016/07/06 02:34:25 [notice] 6013#0: signal process started
