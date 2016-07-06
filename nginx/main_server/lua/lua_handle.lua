@@ -25,60 +25,58 @@ end
 
 -- redis connect and write
 ngx.say("---------------write to redis---------------------")
-     local redis = require "resty.redis"
-     local red = redis:new()
+local redis = require "resty.redis"
+local red = redis:new()
 
-     red:set_timeout(1000) --timeout 1 sec
+red:set_timeout(1000) --timeout 1 sec
 
-     local ok, err = red:connect("127.0.0.1", 6379)
+local ok, err = red:connect("127.0.0.1", 6379)
+if not ok then
+   ngx.say("failed to connect: ", err)
+   return
+end
+
+-- 请注意这里 auth 的调用过程
+local count
+count, err = red:get_reused_times()
+if 0 == count then
+   ok, err = red:auth("ubuntu")  -- 安全验证
+   if not ok then
+       ngx.say("failed to auth: ", err)
+       return
+   end
+elseif err then
+   ngx.say("failed to get reused times: ", err)
+   return
+end
+
+if t then
+   ngx.say(" write to redis --> ")
+   for i,v in pairs(t) do
+
+     local ok, err = red:hmset("mydata", i, v)
      if not ok then
-         ngx.say("failed to connect: ", err)
+         ngx.say("failed to set : ", err)
          return
      end
+     ngx.say("key: ",i,", value: ",v, "  set ok")
 
-     -- 请注意这里 auth 的调用过程
-     local count
-     count, err = red:get_reused_times()
-     if 0 == count then
-         ok, err = red:auth("ubuntu")  -- 安全验证
-         if not ok then
-             ngx.say("failed to auth: ", err)
-             return
-         end
-     elseif err then
-         ngx.say("failed to get reused times: ", err)
-         return
-     end
+   end
+   ngx.say("<-- write stop  ")
+end
 
-     if t then
-         ngx.say(" write to redis --> ")
-         for i,v in pairs(t) do
-
-           local ok, err = red:hmset("mydata", i, v)
-           if not ok then
-               ngx.say("failed to set : ", err)
-               return
-           end
-           ngx.say("key: ",i,", value: ",v, "  set ok")
-
-         end
-         ngx.say("<-- write stop  ")
-     end
-
-     ngx.say("all k-v set result: ", ok)
-
-
+ngx.say("all k-v set result: ", ok)
 
 
 -- read from redis
 ngx.say("---------------read from redis (hashset)---------------------")
 
-  local res, err = red:hmget("mydata", "name", "age")
-  for i,v in pairs(res) do
+local res, err = red:hmget("mydata", "name", "age")
+for i,v in pairs(res) do
 
-  ngx.say("key: ",i,", value: ",v, "   get ok")
+ngx.say("key: ",i,", value: ",v, "   get ok")
 
-  end
+end
 
 
 -- 连接池大小是100个，并且设置最大的空闲时间是 10 秒
