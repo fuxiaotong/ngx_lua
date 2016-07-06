@@ -53,3 +53,7 @@
 2016/07/01 02:36:22 [error] 8652#0: *11 open() "/usr/local/openresty/nginx/html/app/test_parallels" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /app/test_parallels HTTP/1.1", host: "127.0.0.1"
 2016/07/03 18:59:36 [notice] 3297#0: signal process started
 2016/07/03 18:59:36 [error] 3297#0: open() "/usr/local/openresty/nginx/logs/nginx.pid" failed (2: No such file or directory)
+2016/07/05 03:18:40 [error] 15012#0: *2 open() "/usr/local/openresty/nginx/html/test" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /test HTTP/1.1", host: "127.0.0.1"
+2016/07/05 03:19:11 [notice] 15873#0: signal process started
+2016/07/05 03:21:35 [notice] 15890#0: signal process started
+2016/07/05 03:37:45 [notice] 16270#0: signal process started
