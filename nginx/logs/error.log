@@ -263,3 +263,94 @@ coroutine 0:
 2016/07/06 19:19:03 [notice] 10689#0: signal process started
 2016/07/06 19:21:50 [notice] 10715#0: signal process started
 2016/07/06 19:28:18 [notice] 10747#0: signal process started
+2016/07/06 23:57:20 [alert] 12686#0: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:43
+2016/07/06 23:57:20 [notice] 12686#0: signal process started
+2016/07/06 23:57:20 [alert] 4237#0: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:43
+2016/07/07 00:20:45 [error] 12690#0: *1643 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:2: module 'lua.common' not found:
+	no field package.preload['lua.common']
+	no file '/usr/local/openresty/lualib/lua/common.lua'
+	no file '/usr/local/openresty/lualib/lua/common/init.lua'
+	no file './lua/common.lua'
+	no file '/usr/local/openresty/luajit/share/luajit-2.1.0-beta2/lua/common.lua'
+	no file '/usr/local/share/lua/5.1/lua/common.lua'
+	no file '/usr/local/share/lua/5.1/lua/common/init.lua'
+	no file '/usr/local/openresty/luajit/share/lua/5.1/lua/common.lua'
+	no file '/usr/local/openresty/luajit/share/lua/5.1/lua/common/init.lua'
+	no file '/usr/local/openresty/lualib/lua/common.so'
+	no file './lua/common.so'
+	no file '/usr/local/lib/lua/5.1/lua/common.so'
+	no file '/usr/local/openresty/luajit/lib/lua/5.1/lua/common.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file '/usr/local/openresty/lualib/lua.so'
+	no file './lua.so'
+	no file '/usr/local/lib/lua/5.1/lua.so'
+	no file '/usr/local/openresty/luajit/lib/lua/5.1/lua.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/usr/local/openresty/nginx/main_server/lua/lua_handle.lua:2: in function </usr/local/openresty/nginx/main_server/lua/lua_handle.lua:1>, client: 127.0.0.1, server: localhost, request: "POST /test HTTP/1.1", host: "127.0.0.1"
+2016/07/07 00:22:40 [error] 12690#0: *1644 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:2: module 'main_server.lua.common' not found:
+	no field package.preload['main_server.lua.common']
+	no file '/usr/local/openresty/lualib/main_server/lua/common.lua'
+	no file '/usr/local/openresty/lualib/main_server/lua/common/init.lua'
+	no file './main_server/lua/common.lua'
+	no file '/usr/local/openresty/luajit/share/luajit-2.1.0-beta2/main_server/lua/common.lua'
+	no file '/usr/local/share/lua/5.1/main_server/lua/common.lua'
+	no file '/usr/local/share/lua/5.1/main_server/lua/common/init.lua'
+	no file '/usr/local/openresty/luajit/share/lua/5.1/main_server/lua/common.lua'
+	no file '/usr/local/openresty/luajit/share/lua/5.1/main_server/lua/common/init.lua'
+	no file '/usr/local/openresty/lualib/main_server/lua/common.so'
+	no file './main_server/lua/common.so'
+	no file '/usr/local/lib/lua/5.1/main_server/lua/common.so'
+	no file '/usr/local/openresty/luajit/lib/lua/5.1/main_server/lua/common.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file '/usr/local/openresty/lualib/main_server.so'
+	no file './main_server.so'
+	no file '/usr/local/lib/lua/5.1/main_server.so'
+	no file '/usr/local/openresty/luajit/lib/lua/5.1/main_server.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/usr/local/openresty/nginx/main_server/lua/lua_handle.lua:2: in function </usr/local/openresty/nginx/main_server/lua/lua_handle.lua:1>, client: 127.0.0.1, server: localhost, request: "POST /test HTTP/1.1", host: "127.0.0.1"
+2016/07/07 00:57:39 [alert] 14526#0: worker process 14763 exited on signal 11 (core dumped)
+2016/07/07 00:58:20 [alert] 14526#0: worker process 16129 exited on signal 11 (core dumped)
+2016/07/07 00:58:28 [alert] 16150#0: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:43
+2016/07/07 00:58:28 [notice] 16150#0: signal process started
+2016/07/07 00:58:28 [alert] 16150#0: kill(4237, 1) failed (3: No such process)
+2016/07/07 00:58:30 [alert] 14526#0: worker process 16146 exited on signal 11 (core dumped)
+2016/07/07 00:58:40 [alert] 14526#0: worker process 16156 exited on signal 11 (core dumped)
+2016/07/07 01:00:00 [alert] 16190#0: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:43
+2016/07/07 01:01:31 [error] 16194#0: *7 lua entry thread aborted: runtime error: /usr/local/openresty/lualib/lua/lua_handle.lua:11: attempt to index local 'commom' (a boolean value)
+stack traceback:
+coroutine 0:
+	/usr/local/openresty/lualib/lua/lua_handle.lua: in function </usr/local/openresty/lualib/lua/lua_handle.lua:1>, client: 127.0.0.1, server: localhost, request: "POST /test HTTP/1.1", host: "127.0.0.1"
+2016/07/07 01:01:35 [error] 16194#0: *8 lua entry thread aborted: runtime error: /usr/local/openresty/lualib/lua/lua_handle.lua:11: attempt to index local 'commom' (a boolean value)
+stack traceback:
+coroutine 0:
+	/usr/local/openresty/lualib/lua/lua_handle.lua: in function </usr/local/openresty/lualib/lua/lua_handle.lua:1>, client: 127.0.0.1, server: localhost, request: "POST /test HTTP/1.1", host: "127.0.0.1"
+2016/07/07 01:01:55 [error] 16194#0: *9 lua entry thread aborted: runtime error: /usr/local/openresty/lualib/lua/lua_handle.lua:11: attempt to index local 'commom' (a boolean value)
+stack traceback:
+coroutine 0:
+	/usr/local/openresty/lualib/lua/lua_handle.lua: in function </usr/local/openresty/lualib/lua/lua_handle.lua:1>, client: 127.0.0.1, server: localhost, request: "POST /test HTTP/1.1", host: "127.0.0.1"
+2016/07/07 01:02:03 [error] 16194#0: *10 lua entry thread aborted: runtime error: /usr/local/openresty/lualib/lua/lua_handle.lua:11: attempt to index local 'commom' (a boolean value)
+stack traceback:
+coroutine 0:
+	/usr/local/openresty/lualib/lua/lua_handle.lua: in function </usr/local/openresty/lualib/lua/lua_handle.lua:1>, client: 127.0.0.1, server: localhost, request: "POST /test HTTP/1.1", host: "127.0.0.1"
+2016/07/07 01:02:10 [alert] 16258#0: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:43
+2016/07/07 01:02:10 [notice] 16258#0: signal process started
+2016/07/07 01:02:10 [alert] 16191#0: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:43
+2016/07/07 01:02:16 [error] 16259#0: *11 lua entry thread aborted: runtime error: /usr/local/openresty/lualib/lua/lua_handle.lua:11: attempt to index local 'commom' (a boolean value)
+stack traceback:
+coroutine 0:
+	/usr/local/openresty/lualib/lua/lua_handle.lua: in function </usr/local/openresty/lualib/lua/lua_handle.lua:1>, client: 127.0.0.1, server: localhost, request: "POST /test HTTP/1.1", host: "127.0.0.1"
+2016/07/07 01:02:28 [error] 16259#0: *12 lua entry thread aborted: runtime error: /usr/local/openresty/lualib/lua/lua_handle.lua:12: attempt to index local 'commom' (a boolean value)
+stack traceback:
+coroutine 0:
+	/usr/local/openresty/lualib/lua/lua_handle.lua: in function </usr/local/openresty/lualib/lua/lua_handle.lua:1>, client: 127.0.0.1, server: localhost, request: "POST /test HTTP/1.1", host: "127.0.0.1"
+2016/07/07 01:02:51 [alert] 16293#0: lua_code_cache is off; this will hurt performance in /usr/local/openresty/nginx/conf/nginx.conf:43
+2016/07/07 01:02:56 [error] 16297#0: *1 lua entry thread aborted: runtime error: /usr/local/openresty/lualib/lua/lua_handle.lua:12: attempt to index local 'commom' (a boolean value)
+stack traceback:
+coroutine 0:
+	/usr/local/openresty/lualib/lua/lua_handle.lua: in function </usr/local/openresty/lualib/lua/lua_handle.lua:1>, client: 127.0.0.1, server: localhost, request: "POST /test HTTP/1.1", host: "127.0.0.1"
