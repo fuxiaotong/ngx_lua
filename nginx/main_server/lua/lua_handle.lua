@@ -13,7 +13,6 @@ function json_encode( str )
     pcall(function (str) json_value = json.encode(str) end, str)
     return json_value
 end
-
 ngx.say("---------------decode json---------------------")
 
 local json = require("cjson.safe")
@@ -22,11 +21,9 @@ local json = require("cjson.safe")
 local str = data
 local t    = json_decode(str)
 if t then
-    ngx.say(" json decode start --> ")
     for i,v in pairs(t) do
       ngx.say("key: ",i,", value: ",v)
     end
-    ngx.say("<-- json decode stop  ")
 end
 
 -- redis connect and write
