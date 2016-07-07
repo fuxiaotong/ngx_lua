@@ -77,7 +77,7 @@ ngx.say("all k-v set result: ", ok)
 -- read from redis
 ngx.say("---------------read from redis (hashset)---------------------")
 
-local json_status = {} --新建一个，防止终端上报多余的数据
+local json_status = {} 
 local keys = {'name', 'age'}
 local res, err = red:hmget("mydata","name","age")
 for k,v in ipairs(res) do
