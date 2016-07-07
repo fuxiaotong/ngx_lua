@@ -8,6 +8,12 @@ function json_decode( str )
     return json_value
 end
 
+function json_encode( str )
+    local json_value = nil
+    pcall(function (str) json_value = json.encode(str) end, str)
+    return json_value
+end
+
 ngx.say("---------------decode json---------------------")
 
 local json = require("cjson.safe")
@@ -44,25 +50,25 @@ if 0 == count then
    if not ok then
        ngx.say("failed to auth: ", err)
        return
-   end
+     end
 elseif err then
-   ngx.say("failed to get reused times: ", err)
-   return
+  ngx.say("failed to get reused times: ", err)
+  return
 end
 
 if t then
-   ngx.say(" write to redis --> ")
-   for i,v in pairs(t) do
+  ngx.say(" write to redis --> ")
+  for i,v in pairs(t) do
 
-     local ok, err = red:hmset("mydata", i, v)
-     if not ok then
-         ngx.say("failed to set : ", err)
-         return
-     end
-     ngx.say("key: ",i,", value: ",v, "  set ok")
+    local ok, err = red:hmset("mydata", i, v)
+    if not ok then
+      ngx.say("failed to set : ", err)
+      return
+    end
+    ngx.say("key: ",i,", value: ",v, "  set ok")
 
-   end
-   ngx.say("<-- write stop  ")
+  end
+  ngx.say("<-- write stop  ")
 end
 
 ngx.say("all k-v set result: ", ok)
@@ -71,17 +77,20 @@ ngx.say("all k-v set result: ", ok)
 -- read from redis
 ngx.say("---------------read from redis (hashset)---------------------")
 
-local res, err = red:hmget("mydata", "name", "age")
-for i,v in pairs(res) do
-
-ngx.say("key: ",i,", value: ",v, "   get ok")
-
+local json_status = {} --新建一个，防止终端上报多余的数据
+local keys = {'name', 'age'}
+local res, err = red:hmget("mydata","name","age")
+for k,v in ipairs(res) do
+  json_status[keys[k]] = v
 end
+local record_json = json_encode(json_status)
+--local record_json = json_encode({channel="chan", type="type_s", data={"value"}})
+ngx.say(record_json)
 
 
 -- 连接池大小是100个，并且设置最大的空闲时间是 10 秒
 local ok, err = red:set_keepalive(10000, 100)
 if not ok then
-    ngx.say("failed to set keepalive: ", err)
-    return
+  ngx.say("failed to set keepalive: ", err)
+  return
 end

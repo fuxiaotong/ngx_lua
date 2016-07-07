@@ -213,3 +213,46 @@ coroutine 0:
 2016/07/06 02:29:48 [notice] 5858#0: signal process started
 2016/07/06 02:32:36 [notice] 5891#0: signal process started
 2016/07/06 02:34:25 [notice] 6013#0: signal process started
+2016/07/06 03:00:58 [notice] 6196#0: signal process started
+2016/07/06 03:03:25 [notice] 6220#0: signal process started
+2016/07/06 03:03:29 [error] 6221#0: *93 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:75: bad argument #1 to 'pairs' (table expected, got boolean)
+stack traceback:
+coroutine 0:
+	[C]: in function 'pairs'
+	/usr/local/openresty/nginx/main_server/lua/lua_handle.lua:75: in function </usr/local/openresty/nginx/main_server/lua/lua_handle.lua:1>, client: 127.0.0.1, server: localhost, request: "POST /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 03:48:49 [notice] 6372#0: signal process started
+2016/07/06 03:48:51 [error] 6373#0: *95 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:75: bad argument #1 to 'ipairs' (table expected, got boolean)
+stack traceback:
+coroutine 0:
+	[C]: in function 'ipairs'
+	/usr/local/openresty/nginx/main_server/lua/lua_handle.lua:75: in function </usr/local/openresty/nginx/main_server/lua/lua_handle.lua:1>, client: 127.0.0.1, server: localhost, request: "POST /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 03:49:17 [notice] 6402#0: signal process started
+2016/07/06 03:52:20 [notice] 6427#0: signal process started
+2016/07/06 03:52:21 [error] 6428#0: *99 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:78: attempt to index global 'key' (a nil value)
+stack traceback:
+coroutine 0:
+	/usr/local/openresty/nginx/main_server/lua/lua_handle.lua: in function </usr/local/openresty/nginx/main_server/lua/lua_handle.lua:1>, client: 127.0.0.1, server: localhost, request: "POST /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 03:52:35 [notice] 6443#0: signal process started
+2016/07/06 03:52:45 [notice] 6457#0: signal process started
+2016/07/06 04:17:49 [notice] 6634#0: signal process started
+2016/07/06 04:17:50 [error] 6635#0: *115 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:26: bad argument #1 to 'pairs' (table expected, got string)
+stack traceback:
+coroutine 0:
+	[C]: in function 'pairs'
+	/usr/local/openresty/nginx/main_server/lua/lua_handle.lua:26: in function </usr/local/openresty/nginx/main_server/lua/lua_handle.lua:1>, client: 127.0.0.1, server: localhost, request: "POST /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 04:20:18 [notice] 6657#0: signal process started
+2016/07/06 04:20:19 [error] 6658#0: *116 failed to load external Lua file "/usr/local/openresty/nginx/main_server/lua/lua_handle.lua": /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:84: '}' expected near '=', client: 127.0.0.1, server: localhost, request: "POST /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 04:20:49 [notice] 6673#0: signal process started
+2016/07/06 04:20:50 [error] 6674#0: *117 failed to load external Lua file "/usr/local/openresty/nginx/main_server/lua/lua_handle.lua": /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:84: '}' expected near '=', client: 127.0.0.1, server: localhost, request: "POST /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 04:22:07 [notice] 6689#0: signal process started
+2016/07/06 04:22:08 [error] 6690#0: *118 failed to load external Lua file "/usr/local/openresty/nginx/main_server/lua/lua_handle.lua": /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:86: '}' expected near '=', client: 127.0.0.1, server: localhost, request: "POST /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 04:22:28 [notice] 6703#0: signal process started
+2016/07/06 04:23:50 [notice] 6721#0: signal process started
+2016/07/06 04:23:51 [error] 6722#0: *121 failed to load external Lua file "/usr/local/openresty/nginx/main_server/lua/lua_handle.lua": /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:87: '}' expected near '=', client: 127.0.0.1, server: localhost, request: "POST /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 18:28:34 [notice] 10274#0: signal process started
+2016/07/06 18:38:53 [notice] 10325#0: signal process started
+2016/07/06 18:38:53 [error] 10326#0: *124 failed to load external Lua file "/usr/local/openresty/nginx/main_server/lua/lua_handle.lua": /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:84: ')' expected near '=', client: 127.0.0.1, server: localhost, request: "POST /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 18:39:19 [notice] 10349#0: signal process started
+2016/07/06 18:40:30 [notice] 10365#0: signal process started
+2016/07/06 18:40:31 [error] 10366#0: *127 failed to load external Lua file "/usr/local/openresty/nginx/main_server/lua/lua_handle.lua": /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:84: ')' expected near '=', client: 127.0.0.1, server: localhost, request: "POST /test HTTP/1.1", host: "127.0.0.1"
+2016/07/06 18:47:36 [notice] 10417#0: signal process started
