@@ -77,12 +77,15 @@ ngx.say("all k-v set result: ", ok)
 -- read from redis
 ngx.say("---------------read from redis (hashset)---------------------")
 
-local json_status = {} 
+local json_status = {}
 local keys = {'name', 'age'}
 local res, err = red:hmget("mydata","name","age")
-for k,v in ipairs(res) do
-  json_status[keys[k]] = v
-end
+
+--for k,v in ipairs(res) do
+--  json_status[keys[k]] = v
+--end
+json_status.name = res[1]
+json_status.age = res[2]
 local record_json = json_encode(json_status)
 --local record_json = json_encode({channel="chan", type="type_s", data={"value"}})
 ngx.say(record_json)

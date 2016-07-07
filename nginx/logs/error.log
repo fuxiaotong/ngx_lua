@@ -256,3 +256,6 @@ coroutine 0:
 2016/07/06 18:40:30 [notice] 10365#0: signal process started
 2016/07/06 18:40:31 [error] 10366#0: *127 failed to load external Lua file "/usr/local/openresty/nginx/main_server/lua/lua_handle.lua": /usr/local/openresty/nginx/main_server/lua/lua_handle.lua:84: ')' expected near '=', client: 127.0.0.1, server: localhost, request: "POST /test HTTP/1.1", host: "127.0.0.1"
 2016/07/06 18:47:36 [notice] 10417#0: signal process started
+2016/07/06 18:59:49 [notice] 10529#0: signal process started
+2016/07/06 19:00:42 [notice] 10545#0: signal process started
+2016/07/06 19:03:17 [notice] 10563#0: signal process started
